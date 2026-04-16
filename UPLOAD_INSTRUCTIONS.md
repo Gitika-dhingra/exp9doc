@@ -19,7 +19,10 @@ Experiment 9 Screenshot and Upload Instructions
 4. Upload `ci-cd.yml`
    - Use the file `.github/workflows/ci-cd.yml` for GitHub Actions.
    - A convenient copy is also available at `ci-cd.yml` in the repository root.
-
+Important:
+- Set GitHub repository secrets before Docker publish can run:
+  - `DOCKERHUB_USERNAME`
+  - `DOCKERHUB_TOKEN`
 Local validation commands
 
 - Run production build locally:
