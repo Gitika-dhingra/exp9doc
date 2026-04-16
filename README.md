@@ -15,6 +15,14 @@ Production-ready full-stack setup includes:
 - GitHub Actions CI/CD for Docker Hub image push
 - EC2 deployment via GitHub Actions
 
+## Experiment 9 Required Deliverables
+For submission, capture the following:
+
+- GitHub repository link after you push this repo to GitHub.
+- Screenshot of the latest successful run for the `CI-CD Docker` workflow in GitHub Actions.
+- Screenshot of Docker Hub showing the pushed images for `exp9-api` and `exp9-web`.
+- Upload the workflow file located at `.github/workflows/ci-cd.yml` (a copy is also available at `ci-cd.yml`).
+
 ## Folder structure
 
 ```
