@@ -1,0 +1,111 @@
+:root {
+  font-family: Inter, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #eaf2ff;
+  background: #080d18;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 10%, #12203d, #090f1d 45%, #05070d 100%);
+}
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.2;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+.subtitle {
+  margin: 0.4rem 0 0;
+  color: #b8c8e6;
+  max-width: 760px;
+}
+
+.hero {
+  margin-bottom: 1.2rem;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0 0 0.7rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  border: 1px solid #2f4a82;
+  border-radius: 999px;
+  color: #bbccff;
+  background: rgba(65, 102, 184, 0.2);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 0.6rem 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #4f7fff, #5f9dff);
+  color: #f4f8ff;
+}
+
+.btn-secondary {
+  border-color: #365285;
+  color: #d8e6ff;
+  background: rgba(35, 52, 90, 0.35);
+}
+
+.card {
+  background: rgba(17, 26, 45, 0.72);
+  border: 1px solid #22365f;
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 28px rgba(2, 5, 14, 0.35);
+  backdrop-filter: blur(6px);
+}
+
+.status-text {
+  font-weight: 600;
+  color: #cfe0ff;
+}
+
+.stack-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  color: #c7d6f0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+}
+
+.feature p {
+  margin: 0;
+  color: #bed0f0;
+}

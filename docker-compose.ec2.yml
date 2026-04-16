@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  api:
+    image: ${DOCKERHUB_USERNAME}/exp9-api:latest
+    container_name: exp9-api
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 4000
+    expose:
+      - "4000"
+
+  web:
+    image: ${DOCKERHUB_USERNAME}/exp9-web:latest
+    container_name: exp9-web
+    restart: unless-stopped
+    depends_on:
+      - api
+    ports:
+      - "80:80"
